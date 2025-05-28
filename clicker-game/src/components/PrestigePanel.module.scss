@@ -1,0 +1,54 @@
+.prestigePanel {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-size: 1.5rem;
+  }
+}
+
+.prestigeInfo {
+  margin-bottom: 1.5rem;
+
+  p {
+    margin: 0.5rem 0;
+    color: #666;
+    font-size: 1.1rem;
+  }
+}
+
+.prestigeAvailable {
+  color: #4caf50 !important;
+  font-weight: bold;
+  font-size: 1.2rem !important;
+  margin-top: 1rem !important;
+}
+
+.prestigeButton {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(45deg, #ff9800, #f44336);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+
+  &:hover:not(:disabled) {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  &:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+} 

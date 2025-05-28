@@ -1,0 +1,112 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  background: var(--background-color);
+  color: var(--text-color);
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 1rem;
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.stats {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Courier New', monospace;
+  }
+}
+
+.main {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 2rem;
+  align-items: start;
+}
+
+.leftPanel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.rightPanel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.clickerSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.upgradesSection,
+.casesSection,
+.wheelSection,
+.prestigeSection,
+.skinsSection {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.wheelSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+
+// Add rainbow animation class
+.rainbow {
+  background-size: 200% 200%;
+  animation: rainbow 5s ease infinite;
+}
+
+.submitScoreSection {
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .app {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .leftPanel,
+  .rightPanel {
+    width: 100%;
+  }
+} 
