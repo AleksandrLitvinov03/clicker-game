@@ -26,15 +26,17 @@ jobs:
           node-version: '20'
           cache: 'npm'
       - name: Install dependencies
+        working-directory: ./clicker-game
         run: npm install
       - name: Build
+        working-directory: ./clicker-game
         run: npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'
+          path: './clicker-game/dist'
 
   deploy:
     environment:
