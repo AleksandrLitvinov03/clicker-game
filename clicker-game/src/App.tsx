@@ -10,11 +10,14 @@ import { WheelOfFortune } from './components/WheelOfFortune';
 import { Leaderboard } from './components/Leaderboard';
 import SubmitScore from './components/SubmitScore';
 import Notification from './components/Notification';
+import { useAutoClicker } from './hooks/useAutoClicker';
 import styles from './App.module.scss';
 import { useEffect } from 'react';
 
 const App = () => {
   const { credits, duiktcoins, activeEffects, addCredits } = useGameStore();
+  
+  useAutoClicker();
 
   useEffect(() => {
     const handleKeyPress = (e: KeyboardEvent) => {
